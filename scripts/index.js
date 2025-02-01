@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const ghostApiUrl = 'https://www.toothytales.com/blog/ghost/api/content/posts';
         const apiKey = '68478fbe4b9fc8d5bbc0c186cb'; // Replace with your actual API key
         try {
-            const response = await fetch(`${ghostApiUrl}?key=${apiKey}&limit=all&filter=tag:-clients`);
+            const response = await fetch(`${ghostApiUrl}?key=${apiKey}&limit=all`);
             const data = await response.json();
             displayBlogPosts(data.posts);
         } catch (error) {
